@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Gunaev CV</title>
+        <link rel="stylesheet" href="cv.css">
+    </head>
+
+    <body>
+
+    <div class="container">
+
+        <div class="info">
+            <img src="Gunaev.jpg" alt="My foto" class="avatar" />
+            <div class="info-text">
+                <h1>Константин Гунаев</h1>
+                <p>Я cпециалист <strong> Web-developer</strong></p>
+                <p>Я специалист в области управления проектами</p>
+                <p>Я люблю путешествовать, кататься на велосипеде, читать и програмировать</p>
+
+                <!-- <div class="social"> -->
+                <h4>Мои социальные сети</h4>
+                <!-- <ul type="square"> -->
+                <a href="https://www.instagram.com/konstantingunaev/"            
+                    target="_blank">Instagram</a>
+                |
+                <a href="https://www.t.me/gunaevk/" target="_blank">Telegram</a>
+                |
+                <a href="https://www.linkedin.com/" target="_blank">Linkedin</a>
+                <!-- </ul> -->
+                
+            </div>
+
+
+        </div>
+
+        
+
+        <div class="card bg-yellow">
+            <h2>Мои хобби</h2>
+            <ol class="list">
+                <li>Книги</li>
+                <li>Спорт: Катание на велосипеде, бег</li>
+                <li>Путешествия</li>
+                <li>Музыка</li>
+                <li>Быстрые машины</li>
+            </ol>
+        </div>
+
+        <div class="card bg-green">
+            <h2>Опыт работы</h2>
+            <table class="table">
+                <tr>
+                    <td>Ермолинские полуфабрикаты</td>
+                    <td>Директор филиала</td>
+                    <td>2019 - 2021</td>
+                </tr>
+                <tr>
+                    <td>AO Тандер (Магнит)</td>
+                    <td>Заместитель открывающего директора</td>
+                    <td>2017 - 2019</td>
+                </tr>
+                <tr>
+                    <td>Гранат</td>
+                    <td>Руководитель розничной сети</td>
+                    <td>2016 - 2017</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="card bg-red">
+            <h2>Youtube</h2>
+            <!-- ссылка на другую страницу, в отдельном файле -->
+            <!-- <a href="Youtube list.html" target="_blank">Посмотреть список</a> target="_blank" отвечает за открытие в новом окне-->
+            <ul class="link-list">
+                <li><a href="https://www.youtube.com/watch?v=GtD_J864yts" target="_blank">Чудесная исцеляющая музыка для успокоения ума и избавления от нервных расстройств</a></li>
+                <li><a href="https://www.youtube.com/watch?v=M8BIyhykZKs"target="_blank">Музыка для отдыха, медитации, учебы, чтения, массажа, спа или сна.</a></li>
+
+            </ul>    
+        </div>
+
+        <div class="contact"> 
+            <h2>Связаться со мной</h2>
+            <form action="/">
+            <div class="row"> <!--групировка для смещения надписей в одну строку с полем ввода-->
+                <div class="form-group">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" placeholder="Введите имя">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Ваш email:</label>
+                    <input type="text" id="email" placeholder="Введите email">
+                </div>
+            </div>    
+            <div class="form-group">
+                <label for="text">Ваше сообщение:</label>
+                <textarea name="" id="text" cols="10" rows="5"></textarea>
+            </div>
+                
+            
+            <input class="btn" type="submint" value="Связаться">
+            
+            <div class="position">
+                <div class="box">
+                    <p>Знаем, как выжить, но не знаем, как жить.</p>
+                </div>
+            </div>
+
+            <div style="margin-bottom: 100px;"></div>
+            <!-- просто пустое пространство -->
+            </form>
+        </div>
+
+    </div>  
+
+
+    </body>
+</html>

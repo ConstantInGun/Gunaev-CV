@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/* звездочка - обращение ко всем элементам
+* {
+    padding: 0;
+    margin: 0;
+} */
+
+body {
+  color: #0f141e;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: "Roboto", sans-serif;
+  background-color: #f1ecec;
+
+  /*font: normal 16px 'Roboto', sans-serif;*/
+}
+/* обращение к ссылкам */
+a {
+  color: #0f141e;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  color: blue;
+}
+
+a:visited {
+  color: gray;
+}
+
+/* регулирование ширины и положения на странице */
+.container {
+  padding-top: 50px;
+  max-width: 750px;
+  margin: auto;
+}
+/* задание для фото размеров, скругления и теней */
+.avatar {
+  width: 240px;
+  border-radius: 28px;
+  box-shadow: 5px 5px 15px rgb(4, 51, 95);
+}
+/* обращение только к параграфам внутри блока, задание цвета, отступа,стиля,подчеркивания, прописных и строчных букв (например каждое слоыво с большой буквы), растояния между букв и слов */
+.info p {
+  color: #86898f;
+  margin: 0;
+  font-style: italic;
+  /* font-weight: bold; */
+  /*text-decoration: underline;
+    text-transform: lowercase;
+    text-transform: capitalize;
+    letter-spacing: 5px;
+    word-spasing: 4px;
+    */
+}
+
+.info {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.info-text {
+  margin-left: 40px;
+}
+
+.info-text h4 {
+  margin-bottom: 10px;
+}
+
+/* изменение отступов у блоков. внутри блока отсуп текста, толщина и цвет и вид границы, например прерывистая, размер внешнего отступа */
+/* .social {
+    background: rgb(0, 255, 136);
+    /* padding: 15px; */
+/* padding: 15px 40px; */
+/* padding: 15px 20px 25px 30px; */
+
+/* border: 5px solid red; */
+/* border-bottom-style: dotted ; */
+/* border-top-width: 15px; */
+/* margin: 5px; */
+/* border-radius: 10px; */
+
+/* } */
+/* задание класса для применения с другими классами */
+.bg-yellow {
+  background: #fff9dc;
+}
+
+.bg-green {
+  background: #e5ffe7;
+}
+
+.bg-red {
+  background: #ffe5e5;
+}
+
+.card {
+  padding: 15px 20px;
+  box-shadow: 5px 5px 15px rgb(4, 51, 95);
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+.card:hover {
+  opacity: 0.8;
+}
+
+/* обращение только к заголовкам с размером h2 */
+.card h2 {
+  margin-bottom: 10px;
+}
+/* изменение списка */
+.list {
+  padding: 0 20px;
+  list-style: none; /*убрать нумерацию списка*/
+}
+/* обращение к элементам списка */
+.list li {
+  color: #86898f;
+  margin-bottom: 10px;
+}
+
+.table {
+  width: 100%;
+}
+
+.table td {
+  padding-bottom: 10px;
+}
+
+/* .table .temp td {} обращение к объекту класса внутри класса */
+
+/* псевдоселектор обращение к элементу по порядку */
+/* .table td:nth-child(2), 
+.table td:nth-child(3) {
+    color: #0455f7;
+} */
+/* even четные строки, odd нечетные строки */
+/* .table tr:nth-child(even) {
+    background: #f704f7;
+} */
+.link-list {
+  list-style: none; /*управление точками списка,  можно через url добавить картинки*/
+  padding: 0;
+}
+.link-list li {
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ccc;
+}
+.contact h2 {
+  text-align: center;
+}
+
+.form-group label {
+  display: block; /*элементы находятся не в строчку а друг над другом*/
+  font-size: 14px;
+  color: #86898f;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+  padding: 15px 0 10px;
+  outline: none; /* убрали границу окна ввода при выборе мышью*/
+  font-family: inherit; /*шрифт в области ввода наследуется*/
+}
+/* смещение label and input в одну строку, два блока рядом друг с другом*/
+/* display: none; визуально скрывает элемент на странице */
+.row {
+  display: flex;
+  margin-bottom: 20px;
+}
+/* обращение к форм-груп для позиционирования надписи */
+.row > .form-group {
+  width: 50%;
+  margin-right: 50px;
+}
+
+.btn {
+  color: #fff;
+  padding: 15px 20px;
+  background-color: rgb(102, 100, 185);
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+  border-radius: 8px;
+  text-align: center;
+  margin-left: 40%;
+}
+/* opacity изменяется состояние элемента при наведении на него мыши */
+.btn:hover {
+  opacity: 0.8;
+}
+
+.position {
+  /* border: 4px solid black; */
+  margin-top: 40px;
+  padding: 20px;
+
+  position: relative;
+  height: 300px;
+}
+
+.box {
+  width: 450px;
+  height: 30px;
+  background: rgb(102, 100, 185);
+
+  /* position: absolute;  фиксирует относительно объекта*/
+  position: fixed;
+  top: 5px;
+  /* right: 20px; */
+  /* bottom: 10; */
+  border-radius: 5px;
+}
+.box p {
+  color: #fff;
+  margin: 3px 60px;
+}
